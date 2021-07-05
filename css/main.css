@@ -12,8 +12,35 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  font-weight: normal;
+  letter-spacing: 1px;
+  font-weight: 400;
   color: #fff;
   text-rendering: optimizeLegibility; }
+
+.h3 {
+  font-size: 1.5rem; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, max-content);
+  align-items: center;
+  padding: 0 12px;
+  background-color: #221f1f;
+  height: 50px; }
+  .header__logo img {
+    width: 85px; }
+  .header__burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 28px; }
+    .header__burger-icon span {
+      display: block;
+      background-color: #fff;
+      width: 100%;
+      height: 2px; }
+  .header__label {
+    margin-right: 16px; }

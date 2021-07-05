@@ -1,7 +1,10 @@
 body {
-    font-family: $font-roboto;
+    font-family: $font-raleway;
     font-size: 1.6rem;
-    font-weight: normal;
+    letter-spacing: 1px;
+    font-weight: 400;
     color: $c-white;
     text-rendering: optimizeLegibility;
 };
+
+.h3 { font-size: 1.5rem; }
