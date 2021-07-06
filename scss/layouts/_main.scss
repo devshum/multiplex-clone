@@ -1,0 +1,14 @@
+.main {
+    background-color: $c-gray;
+    padding: $spacer-p-xs;
+
+    &__label {
+        text-align: center;
+    }
+
+    &__cards-box {
+        display: grid;
+        grid-row-gap: $spacer-p-sm / 2;
+        margin-top: $spacer-p-sm / 2;
+    }
+}

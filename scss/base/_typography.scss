@@ -7,4 +7,15 @@ body {
     text-rendering: optimizeLegibility;
 };
 
-.h3 { font-size: 1.5rem; }
+.h3 { 
+    font-size: 1.5rem; 
+
+    &--gray {
+        color: rgba($c-white, .5);
+    }
+}
+
+.h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
