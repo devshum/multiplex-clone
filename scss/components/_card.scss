@@ -1,0 +1,70 @@
+.card {
+    height: 68.75vw;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+
+    &--title {
+        &::after {
+            content: '';
+
+            background: linear-gradient(to bottom,  rgba($c-black, 0) 0%,rgba($c-black, 0) 40%,rgba(0,0,0,.7) 100%);
+
+            display: block;
+    
+            position: absolute;
+            bottom: 0;
+            left: 0;
+    
+            width: 100%;      
+            height: 100%;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__presale-label {
+        position: absolute;
+
+        right: $spacer-p-xs;
+        top: $spacer-p-xs;
+
+        height: 60px;
+        width: 60px;
+    }
+
+    &__end-label {
+        position: absolute;
+
+        right: -30px;
+        top: 15px;
+
+        transform: rotate(45deg);
+
+        background-color: $c-red;
+        text-align: center;
+        font-weight: 700;
+        font-size: 8px;
+        padding: 6px 0;
+        width: 120px;
+        
+        span {
+            display: block;
+        }
+    }
+
+    &__title {
+        width: 100%;
+
+        position: absolute;
+        text-align: center;
+        bottom: $spacer-p-sm;
+
+        z-index: 2;
+    }
+}
