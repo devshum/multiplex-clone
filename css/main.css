@@ -14,13 +14,29 @@ html {
 ul {
   list-style: none; }
 
+input, select, textarea {
+  appearance: none; }
+
+option {
+  background-color: #8c8181; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   letter-spacing: 1px;
   font-weight: 400;
   color: #fff;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  position: relative; }
+
+.h4 {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.2rem; }
 
 .h3 {
   font-size: 1.5rem; }
@@ -30,6 +46,57 @@ body {
 .h2 {
   font-size: 2rem;
   font-weight: 700; }
+
+.enter-block {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 8px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.languages {
+  display: grid;
+  grid-auto-flow: column; }
+  .languages__icon, .languages__select {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; }
+  .languages__select {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    outline: 0;
+    padding-left: 30px;
+    border: none;
+    width: 50px; }
+
+.dropdown {
+  display: grid;
+  grid-auto-flow: column;
+  height: 46px;
+  position: relative; }
+  .dropdown__icon, .dropdown__select {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; }
+  .dropdown__icon {
+    justify-self: end;
+    align-self: center;
+    right: 12px; }
+  .dropdown__label {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: .8rem;
+    color: #bdb6b6;
+    left: 16px;
+    top: 12px; }
+  .dropdown__select {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    outline: 0;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 10px 15px 0;
+    width: 100%; }
 
 .card {
   height: 68.75vw;
@@ -76,6 +143,37 @@ body {
     bottom: 24px;
     z-index: 2; }
 
+.icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #4a4343;
+  position: relative; }
+  .icon--user {
+    background-image: url("../../img/icons/user.svg");
+    background-position: center; }
+  .icon--arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; }
+    .icon--arrow::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-color: #fff;
+      border-width: 2px 2px 0 0;
+      width: 8px;
+      height: 8px;
+      transform: rotate(135deg) translateY(1px) translateX(-1px); }
+
+.container {
+  background-color: #221f1f;
+  padding: 0 16px; }
+  .container--grid {
+    display: grid;
+    grid-template-rows: repeat(4, max-content) 1fr; }
+
 .header {
   display: grid;
   grid-template-columns: 1fr repeat(2, max-content);
@@ -104,10 +202,79 @@ body {
 
 .main {
   background-color: #221f1f;
-  padding: 16px; }
+  padding: 16px 0; }
   .main__label {
     text-align: center; }
   .main__cards-box {
     display: grid;
     grid-row-gap: 12px;
     margin-top: 12px; }
+
+.menu {
+  display: grid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #221f1f;
+  padding-top: 16px;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden; }
+  .menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    margin-top: 16px; }
+    .menu__logo img {
+      height: 140px; }
+  .menu__dropdown-box {
+    display: flex;
+    grid-column-gap: 8px; }
+    .menu__dropdown-box > * {
+      flex: 1; }
+  .menu__list {
+    display: grid;
+    grid-row-gap: 24px;
+    margin: 32px 0 56px 0; }
+  .menu__link {
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none; }
+    .menu__link--red {
+      color: red; }
+    .menu__link--yellow {
+      color: #feee27; }
+  .menu__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 8px;
+    grid-row-gap: 24px;
+    position: relative;
+    background-color: #2a2727;
+    margin: 0 -16px;
+    padding: 24px;
+    align-self: end; }
+  .menu__footer-preview {
+    display: grid;
+    justify-items: end; }
+    .menu__footer-preview img {
+      display: block;
+      max-width: 100%;
+      max-height: 280px; }
+  .menu__footer-btn img {
+    display: block;
+    max-width: 160px;
+    width: 100%; }
+  .menu__footer-btn {
+    grid-column: 1 / 2; }
+  .menu__footer-preview {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    width: 43%; }

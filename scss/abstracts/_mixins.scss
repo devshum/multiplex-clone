@@ -1,0 +1,12 @@
+@mixin flex($justify: unset, $align: unset) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin select-reset {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $c-white;
+    outline: 0;
+}
