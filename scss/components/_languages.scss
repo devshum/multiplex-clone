@@ -1,0 +1,18 @@
+.languages {
+    display: grid;
+    grid-auto-flow: column;
+
+    &__icon,
+    &__select {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    &__select {
+        @include select-reset();
+
+        padding-left: 30px;
+        border: none;
+        width: 50px;
+    }
+}

@@ -12,10 +12,101 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+    <section class="menu">
+        <div class="container container--grid">
+            <div class="menu__header">
+
+                <div class="enter-block">
+                    <i class="icon icon--user">&nbsp;</i>
+                    <a href="https://friends.multiplex.ua/?_ga=2.6884661.643052679.1625853561-1261169249.1625472842" class="enter-block__label h4">Войти</a>
+                </div>
+    
+                <div class="languages">
+                    <i class="languages__icon icon icon--arrow">&nbsp;</i>
+
+                    <select class="languages__select h4">
+                        <option value="ru">ru</option>
+                        <option value="ua">ua</option>
+                        <option value="eng">eng</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="menu__logo">
+                <img src="img/icons/multiplex-logo.svg" alt="logo">
+            </div>
+
+            <div class="menu__dropdown-box">
+                <div class="dropdown">
+                    <div class="dropdown__label">Город</div>
+
+                    <select class="dropdown__select h4">
+                        <option value="kiev">Киев</option>
+                        <option value="lviv">Львов</option>
+                        <option value="odessa">Одесса</option>
+                    </select>
+
+                    <i class="dropdown__icon icon icon--arrow">&nbsp;</i>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown__label">Кинотеатр</div>
+
+                    <select class="dropdown__select h4">
+                        <option value="kiev">Lavina Imax Лазер</option>
+                    </select>
+
+                    <i class="dropdown__icon icon icon--arrow">&nbsp;</i>
+                </div>
+            </div>
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link menu__link--red">Сейчас в кино</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">Скоро в продаже</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link menu__link--yellow">Купить попкорн онлайн</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">Акции и скидки</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">Кинотеатры</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">Помощь</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">О компании</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__link">Личный кабинет</a>
+                </li>
+            </ul>
+
+            <a href="https://play.google.com/store/apps/details?id=com.interpretator.multiplex" class="menu__footer">
+                <div class="menu__footer-label h3 h3--gray">
+					Любимый кинотеатр в Вашем телефоне
+                </div>
+
+                <div class="menu__footer-btn">
+					<img src="img/icons/google-play.svg" alt="google play">
+                </div>
+
+                <div class="menu__footer-preview">
+					<img src="img/footer-preview.png" alt="preview">
+                </div>
+            </a>
+        </div>
+    </section>
+
     <header class="header">
 
         <a class="header__logo">
-            <img src="/img/logo.svg" alt="logo">
+            <img src="img/icons/multiplex-logo.svg" alt="logo">
         </a>
 
         <h3 class="header__label h3">Сейчас в кино</h3>
@@ -31,34 +122,36 @@
     <main class="main">
         <h3 class="main__label h3 h3--gray">Киев, ЦУМ:</h3>
 
-        <ul class="main__cards-box">
-            <li class="card">
-                <img class="card__img" src="img/card-img-1.jpeg" alt="cards' img 1">
-            </li>
-
-            <li class="card card--title">
-                <img class="card__img" src="img/card-img-2.jpeg" alt="cards' img 2">
-                <span class="card__title h2">Бэби Босс 2: Семейный бизнес</span>
-            </li>
-
-            <li class="card card--title">
-                <img class="card__presale-label" src="img/presale.svg" alt="cards' presale label">
-                <img class="card__img" src="img/card-img-3.jpeg" alt="cards' img 3">
-                <span class="card__title h2">Черная вдова</span>
-            </li>
-
-            <li class="card card--title">
-                <span class="card__end-label"><span>До конца</span> проката 1 день!</span>
-                <img class="card__img" src="img/card-img-4.jpeg" alt="cards' img 3">
-                <span class="card__title h2">Ледяной дрифт</span>
-            </li>
-
-            <li class="card card--title">
-                <img class="card__presale-label" src="img/presale.svg" alt="cards' presale label">
-                <img class="card__img" src="img/card-img-5.jpeg" alt="cards' img 3">
-                <span class="card__title h2">Лука</span>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="main__cards-box">
+                <li class="card">
+                    <img class="card__img" src="img/card-img-1.jpeg" alt="cards' img 1">
+                </li>
+    
+                <li class="card card--title">
+                    <img class="card__img" src="img/card-img-2.jpeg" alt="cards' img 2">
+                    <span class="card__title h2">Бэби Босс 2: Семейный бизнес</span>
+                </li>
+    
+                <li class="card card--title">
+                    <img class="card__presale-label" src="img/icons/presale.svg" alt="cards' presale label">
+                    <img class="card__img" src="img/card-img-3.jpeg" alt="cards' img 3">
+                    <span class="card__title h2">Черная вдова</span>
+                </li>
+    
+                <li class="card card--title">
+                    <span class="card__end-label"><span>До конца</span> проката 1 день!</span>
+                    <img class="card__img" src="img/card-img-4.jpeg" alt="cards' img 3">
+                    <span class="card__title h2">Ледяной дрифт</span>
+                </li>
+    
+                <li class="card card--title">
+                    <img class="card__presale-label" src="img/icons/presale.svg" alt="cards' presale label">
+                    <img class="card__img" src="img/card-img-5.jpeg" alt="cards' img 3">
+                    <span class="card__title h2">Лука</span>
+                </li>
+            </ul>
+        </div>
     </main>
 </body>
 </html>

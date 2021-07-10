@@ -1,0 +1,32 @@
+.icon {
+    height: $spacer-p-sm;
+    width: $spacer-p-sm;
+
+    border-radius: 50%;
+    background-color: lighten($c-gray, 15%);
+    position: relative;
+
+    &--user {
+        background-image: url('../../img/icons/user.svg');
+        background-position: center;
+    }
+
+    &--arrow {
+        @include flex(center, center);
+
+        pointer-events: none;
+        
+        &::after {
+            content: '';
+            position: absolute;
+
+            border-style: solid;
+            border-color: $c-white;
+            border-width: 2px 2px 0 0;
+
+            width: 8px;
+            height: 8px;
+            transform: rotate(135deg) translateY(1px)  translateX(-1px);
+        }
+    }
+}

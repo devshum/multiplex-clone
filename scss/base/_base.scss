@@ -17,3 +17,16 @@ html {
 ul {
     list-style: none;
 }
+
+input, select, textarea {
+    appearance: none;
+}
+
+option {
+    background-color: lighten($c-gray, 40%);
+}
+
+a { 
+    color: $c-white; 
+    text-decoration: none;
+}

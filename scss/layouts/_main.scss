@@ -1,6 +1,10 @@
 .main {
     background-color: $c-gray;
-    padding: $spacer-p-xs;
+    padding: $spacer-p-xs 0;
+
+    // test
+    // height: 100vh;
+    // overflow: hidden;
 
     &__label {
         text-align: center;
