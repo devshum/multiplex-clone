@@ -1,11 +1,7 @@
 .main {
     background-color: $c-gray;
     padding: $spacer-p-xs 0;
-
-    // test
-    // height: 100vh;
-    // overflow: hidden;
-
+    
     &__label {
         text-align: center;
     }
@@ -15,4 +11,9 @@
         grid-row-gap: $spacer-p-sm / 2;
         margin-top: $spacer-p-sm / 2;
     }
+}
+
+.freeze {
+    height: 100vh;
+    overflow: hidden;
 }

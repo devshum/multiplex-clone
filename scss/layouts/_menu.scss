@@ -6,7 +6,7 @@
     top: 0;
 
     background-color: $c-gray;
-    padding-top: $spacer-p-xs;
+    padding-top: 12px;
     height: 100%;
     width: 100%;
 
@@ -14,6 +14,8 @@
 
     opacity: 0;
     visibility: hidden;
+
+    transition: $transition;
 
     &__header {
         @include flex(space-between, center);
@@ -32,6 +34,10 @@
         grid-column-gap: 8px;
 
         & > * { flex: 1; }
+    }
+
+    &__languages {
+        margin-right: 50px;
     }
 
     &__list {
@@ -98,4 +104,9 @@
         right: $spacer-p-xs;
         width: 43%;
     }
+}
+
+.opened {
+    opacity: 1;
+    visibility: visible;
 }

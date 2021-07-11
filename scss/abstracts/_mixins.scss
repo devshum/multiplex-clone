@@ -10,3 +10,11 @@
     color: $c-white;
     outline: 0;
 }
+
+@mixin iconBg {
+    height: $spacer-p-sm;
+    width: $spacer-p-sm;
+
+    border-radius: 50%;
+    background-color: lighten($c-gray, 15%);
+}
