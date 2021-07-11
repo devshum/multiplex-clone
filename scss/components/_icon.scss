@@ -1,9 +1,6 @@
 .icon {
-    height: $spacer-p-sm;
-    width: $spacer-p-sm;
+    @include iconBg;
 
-    border-radius: 50%;
-    background-color: lighten($c-gray, 15%);
     position: relative;
 
     &--user {
