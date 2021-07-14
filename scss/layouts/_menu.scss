@@ -17,6 +17,11 @@
 
     transition: $transition;
 
+    &.opened {
+        opacity: 1;
+        visibility: visible;
+    }
+
     &__header {
         @include flex(space-between, center);
     }
@@ -104,9 +109,4 @@
         right: $spacer-p-xs;
         width: 43%;
     }
-}
-
-.opened {
-    opacity: 1;
-    visibility: visible;
 }

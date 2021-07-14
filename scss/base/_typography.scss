@@ -12,6 +12,10 @@ body {
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 1.2rem;
+
+    @include breakpoint(desktop) {
+        font-size: 1.6rem;
+    }
 }
 
 .h3 { 

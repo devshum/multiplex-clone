@@ -3,6 +3,9 @@
 
     position: relative;
 
+    
+    pointer-events: none;
+
     &--user {
         background-image: url('../../img/icons/user.svg');
         background-position: center;
@@ -10,8 +13,6 @@
 
     &--arrow {
         @include flex(center, center);
-
-        pointer-events: none;
         
         &::after {
             content: '';

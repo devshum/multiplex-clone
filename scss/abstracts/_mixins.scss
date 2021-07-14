@@ -17,4 +17,17 @@
 
     border-radius: 50%;
     background-color: lighten($c-gray, 15%);
+
+    transition: $transition;
+
+    @include breakpoint(desktop) {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 64em) { @content };    // 1024
+    }
 }

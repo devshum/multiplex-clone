@@ -1,6 +1,16 @@
 .main {
     background-color: $c-gray;
     padding: $spacer-p-xs 0;
+
+    &.freeze {
+        height: 100vh;
+        overflow: hidden;
+    
+        @include breakpoint(desktop) {
+            height: unset;
+            overflow: unset;
+        }
+    }
     
     &__label {
         text-align: center;
@@ -11,9 +21,4 @@
         grid-row-gap: $spacer-p-sm / 2;
         margin-top: $spacer-p-sm / 2;
     }
-}
-
-.freeze {
-    height: 100vh;
-    overflow: hidden;
 }
